@@ -1,0 +1,25 @@
+PONY_APPLEJACK='\033[48;5;222;38;5;173m'
+PONY_FLUTTERSHY='\033[48;5;228;38;5;175m'
+PONY_PINKIE='\033[48;5;218;38;5;161m'
+PONY_RAINBOW='\033[48;5;153;38;5;203m'
+PONY_RARITY='\033[48;5;255;38;5;54m'
+PONY_TWILIGHT='\033[48;5;182;38;5;54m'
+
+PONY_CELESTIA='\033[48;5;255;38;5;74m'
+PONY_LUNA='\033[48;5;61;38;5;233m'
+PONY_DERPY='\033[48;5;252;38;5;229m'
+
+PONY_DIRECTORY='\033[1;34;49m'
+PONY_RESET='\033[m'
+
+if [ "${BASH_SOURCE[0]}" == "$0" ]; then
+	echo -e "${PONY_APPLEJACK}Applejack"
+	echo -e "${PONY_FLUTTERSHY}Fluttershy"
+	echo -e "${PONY_PINKIE}Pinkie Pie"
+	echo -e "${PONY_RAINBOW}Rainbow Dash"
+	echo -e "${PONY_RARITY}Rarity"
+	echo -e "${PONY_TWILIGHT}Twilight Sparkle"
+
+	echo -e "${PONY_CELESTIA}Celestia"
+	echo -e "${PONY_LUNA}Luna$PONY_RESET"
+fi

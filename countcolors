@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+
+import collections
+import io
+import re
+import sys
+
+input = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8').read()
+
+colors = re.findall('\x1b\[[34][89];\d+;\d+', input)
+for k,v in collections.Counter(colors).most_common(20):
+  print('%03d' % v, k + 'm', 'example', '\033[0m', k.replace('\033', r'\033'))
