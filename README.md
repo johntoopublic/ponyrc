@@ -7,4 +7,4 @@ Pony themed .bashrc includes.
  - **countcolors** Small python script to count the most common expanded colors codes piped in (e.g. ponysay -q pinkie | ponyrc/countcolors).
  - **discord.bash** Bash script to randomly output fortune or ponysay on new prompts if included in .bashrc.
 
-![Included color schemes.](//i.imgur.com/ePrByxp.png)
+![Included color schemes.](http://i.imgur.com/ePrByxp.png)
