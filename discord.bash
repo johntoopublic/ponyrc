@@ -1,5 +1,3 @@
-. `dirname $BASH_SOURCE[0]`/colors.bash
-
 function __discord {
 	case "$(($RANDOM % 10))" in
 	"1")
