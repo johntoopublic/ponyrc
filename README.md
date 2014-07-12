@@ -12,4 +12,4 @@ Pony themed .bashrc includes.
 **.bashrc** used for picture:
 
     . $HOME/src/ponyrc/colors.bash
-    PS1="$PONY_PINKIE\t$PONY_DIRECTORY \W$PONY_RESET "
+    PS1="$PONY_PS1_START$PONY_PINKIE\t$PONY_DIRECTORY \W$PONY_RESET$PONY_PS1_END "
