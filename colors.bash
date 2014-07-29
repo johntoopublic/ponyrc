@@ -9,6 +9,12 @@ PONY_CELESTIA='\033[48;5;255;38;5;74m'
 PONY_LUNA='\033[48;5;61;38;5;233m'
 PONY_DERPY='\033[48;5;252;38;5;229m'
 
+PONY_LIST=($PONY_APPLEJACK $PONY_FLUTTERSHY $PONY_PINKIE $PONY_RAINBOW \
+  $PONY_RARITY $PONY_TWILIGHT $PONY_CELESTIA $PONY_LUNA $PONY_DERPY)
+
+# A randomly selected pony color.
+PONY_RANDOM=${PONY_LIST[$RANDOM % ${#PONY_LIST[@]}]}
+
 # The common directory color for ls.
 PONY_DIRECTORY='\033[1;34;49m'
 # Reset active styles.
@@ -19,14 +25,14 @@ PONY_PS1_START='\['
 PONY_PS1_END='\]'
 
 if [ "${BASH_SOURCE[0]}" == "$0" ]; then
-	printf "$PONY_APPLEJACK %-17s\n" "Applejack"
-	printf "$PONY_FLUTTERSHY %-17s\n" "Fluttershy"
-	printf "$PONY_PINKIE %-17s\n" "Pinkie Pie"
-	printf "$PONY_RAINBOW %-17s\n" "Rainbow Dash"
-	printf "$PONY_RARITY %-17s\n" "Rarity"
-	printf "$PONY_TWILIGHT %-17s\n" "Twilight Sparkle"
+  printf "$PONY_APPLEJACK %-17s\n" "Applejack"
+  printf "$PONY_FLUTTERSHY %-17s\n" "Fluttershy"
+  printf "$PONY_PINKIE %-17s\n" "Pinkie Pie"
+  printf "$PONY_RAINBOW %-17s\n" "Rainbow Dash"
+  printf "$PONY_RARITY %-17s\n" "Rarity"
+  printf "$PONY_TWILIGHT %-17s\n" "Twilight Sparkle"
 
-	printf "$PONY_CELESTIA %-17s\n" "Celestia"
-	printf "$PONY_LUNA %-17s\n" "Luna"
-	printf "$PONY_RESET"
+  printf "$PONY_CELESTIA %-17s\n" "Celestia"
+  printf "$PONY_LUNA %-17s\n" "Luna"
+  printf "$PONY_RESET"
 fi
